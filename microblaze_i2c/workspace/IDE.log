@@ -1,0 +1,622 @@
+15:21:03 INFO  : Registering command handlers for Vitis TCF services
+15:21:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\temp_xsdb_launch_script.tcl
+15:21:05 INFO  : XSCT server has started successfully.
+15:21:05 INFO  : plnx-install-location is set to ''
+15:21:06 INFO  : Platform repository initialization has completed.
+15:21:09 INFO  : Successfully done setting XSCT server connection channel  
+15:21:09 INFO  : Successfully done query RDI_DATADIR 
+15:21:09 INFO  : Successfully done setting workspace for the tool. 
+15:21:51 INFO  : Result from executing command 'getProjects': axi_i2c_wrapper
+15:21:51 INFO  : Result from executing command 'getPlatforms': 
+15:21:51 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:21:52 INFO  : Platform 'axi_i2c_wrapper' is added to custom repositories.
+15:21:53 INFO  : Platform 'axi_i2c_wrapper' is added to custom repositories.
+16:06:08 INFO  : Result from executing command 'getProjects': axi_i2c_wrapper
+16:06:08 INFO  : Result from executing command 'getPlatforms': axi_i2c_wrapper|D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/axi_i2c_wrapper.xpfm
+16:06:08 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+16:06:23 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+16:06:31 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+16:06:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:06:41 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+16:06:41 INFO  : 'jtag frequency' command is executed.
+16:06:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+16:06:42 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+16:06:42 INFO  : Context for processor 'microblaze_0' is selected.
+16:06:42 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+16:06:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:06:42 INFO  : Context for processor 'microblaze_0' is selected.
+16:06:42 INFO  : System reset is completed.
+16:06:45 INFO  : 'after 3000' command is executed.
+16:06:45 INFO  : Context for processor 'microblaze_0' is selected.
+16:06:45 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+16:06:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+16:06:45 INFO  : Context for processor 'microblaze_0' is selected.
+16:06:45 INFO  : 'con' command is executed.
+16:06:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:06:45 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+16:07:32 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+16:07:37 INFO  : Disconnected from the channel tcfchan#2.
+16:07:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:07:38 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+16:07:38 INFO  : 'jtag frequency' command is executed.
+16:07:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+16:07:38 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+16:07:38 INFO  : Context for processor 'microblaze_0' is selected.
+16:07:38 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+16:07:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:07:38 INFO  : Context for processor 'microblaze_0' is selected.
+16:07:38 INFO  : System reset is completed.
+16:07:42 INFO  : 'after 3000' command is executed.
+16:07:42 INFO  : Context for processor 'microblaze_0' is selected.
+16:07:42 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+16:07:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+16:07:42 INFO  : Context for processor 'microblaze_0' is selected.
+16:07:42 INFO  : 'con' command is executed.
+16:07:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:07:42 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+16:17:04 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+16:17:09 INFO  : Disconnected from the channel tcfchan#3.
+16:17:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:17:10 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+16:17:10 INFO  : 'jtag frequency' command is executed.
+16:17:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+16:17:10 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+16:17:10 INFO  : Context for processor 'microblaze_0' is selected.
+16:17:10 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+16:17:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:17:11 INFO  : Context for processor 'microblaze_0' is selected.
+16:17:11 INFO  : System reset is completed.
+16:17:14 INFO  : 'after 3000' command is executed.
+16:17:14 INFO  : Context for processor 'microblaze_0' is selected.
+16:17:14 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+16:17:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+16:17:14 INFO  : Context for processor 'microblaze_0' is selected.
+16:17:14 INFO  : 'con' command is executed.
+16:17:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:17:14 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+16:47:54 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+16:47:57 INFO  : Disconnected from the channel tcfchan#4.
+16:47:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:47:58 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+16:47:58 INFO  : 'jtag frequency' command is executed.
+16:47:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+16:47:59 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+16:47:59 INFO  : Context for processor 'microblaze_0' is selected.
+16:47:59 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+16:47:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:47:59 INFO  : Context for processor 'microblaze_0' is selected.
+16:47:59 INFO  : System reset is completed.
+16:48:02 INFO  : 'after 3000' command is executed.
+16:48:02 INFO  : Context for processor 'microblaze_0' is selected.
+16:48:02 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+16:48:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+16:48:02 INFO  : Context for processor 'microblaze_0' is selected.
+16:48:02 INFO  : 'con' command is executed.
+16:48:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:48:02 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+16:51:51 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+16:52:05 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+16:52:08 INFO  : Disconnected from the channel tcfchan#5.
+16:52:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:09 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+16:52:09 INFO  : 'jtag frequency' command is executed.
+16:52:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+16:52:09 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+16:52:09 INFO  : Context for processor 'microblaze_0' is selected.
+16:52:09 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+16:52:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:52:09 INFO  : Context for processor 'microblaze_0' is selected.
+16:52:09 INFO  : System reset is completed.
+16:52:12 INFO  : 'after 3000' command is executed.
+16:52:12 INFO  : Context for processor 'microblaze_0' is selected.
+16:52:12 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+16:52:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+16:52:13 INFO  : Context for processor 'microblaze_0' is selected.
+16:52:13 INFO  : 'con' command is executed.
+16:52:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:52:13 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+17:15:44 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+17:15:48 INFO  : Disconnected from the channel tcfchan#6.
+17:15:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:15:49 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+17:15:49 INFO  : 'jtag frequency' command is executed.
+17:15:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+17:15:50 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+17:15:50 INFO  : Context for processor 'microblaze_0' is selected.
+17:15:50 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+17:15:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:15:50 INFO  : Context for processor 'microblaze_0' is selected.
+17:15:50 INFO  : System reset is completed.
+17:15:53 INFO  : 'after 3000' command is executed.
+17:15:53 INFO  : Context for processor 'microblaze_0' is selected.
+17:15:53 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+17:15:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+17:15:53 INFO  : Context for processor 'microblaze_0' is selected.
+17:15:53 INFO  : 'con' command is executed.
+17:15:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:15:53 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+17:24:21 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+17:24:25 INFO  : Disconnected from the channel tcfchan#7.
+17:24:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:24:26 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+17:24:26 INFO  : 'jtag frequency' command is executed.
+17:24:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+17:24:27 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+17:24:27 INFO  : Context for processor 'microblaze_0' is selected.
+17:24:27 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+17:24:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:24:27 INFO  : Context for processor 'microblaze_0' is selected.
+17:24:27 INFO  : System reset is completed.
+17:24:30 INFO  : 'after 3000' command is executed.
+17:24:30 INFO  : Context for processor 'microblaze_0' is selected.
+17:24:30 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+17:24:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+17:24:30 INFO  : Context for processor 'microblaze_0' is selected.
+17:24:30 INFO  : 'con' command is executed.
+17:24:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:24:30 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+17:26:13 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+17:26:18 INFO  : Disconnected from the channel tcfchan#8.
+17:26:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:26:19 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+17:26:19 INFO  : 'jtag frequency' command is executed.
+17:26:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+17:26:20 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+17:26:20 INFO  : Context for processor 'microblaze_0' is selected.
+17:26:20 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+17:26:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:26:20 INFO  : Context for processor 'microblaze_0' is selected.
+17:26:20 INFO  : System reset is completed.
+17:26:23 INFO  : 'after 3000' command is executed.
+17:26:23 INFO  : Context for processor 'microblaze_0' is selected.
+17:26:23 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+17:26:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+17:26:23 INFO  : Context for processor 'microblaze_0' is selected.
+17:26:23 INFO  : 'con' command is executed.
+17:26:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:26:23 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+17:51:56 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+17:51:59 INFO  : Disconnected from the channel tcfchan#9.
+17:52:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:52:00 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+17:52:00 INFO  : 'jtag frequency' command is executed.
+17:52:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+17:52:01 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+17:52:01 INFO  : Context for processor 'microblaze_0' is selected.
+17:52:01 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+17:52:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:52:01 INFO  : Context for processor 'microblaze_0' is selected.
+17:52:01 INFO  : System reset is completed.
+17:52:04 INFO  : 'after 3000' command is executed.
+17:52:04 INFO  : Context for processor 'microblaze_0' is selected.
+17:52:04 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+17:52:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+17:52:04 INFO  : Context for processor 'microblaze_0' is selected.
+17:52:04 INFO  : 'con' command is executed.
+17:52:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:52:04 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+17:53:02 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+17:53:05 INFO  : Disconnected from the channel tcfchan#10.
+17:53:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:53:06 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+17:53:06 INFO  : 'jtag frequency' command is executed.
+17:53:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+17:53:07 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+17:53:07 INFO  : Context for processor 'microblaze_0' is selected.
+17:53:07 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+17:53:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:53:07 INFO  : Context for processor 'microblaze_0' is selected.
+17:53:07 INFO  : System reset is completed.
+17:53:10 INFO  : 'after 3000' command is executed.
+17:53:10 INFO  : Context for processor 'microblaze_0' is selected.
+17:53:10 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+17:53:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+17:53:10 INFO  : Context for processor 'microblaze_0' is selected.
+17:53:10 INFO  : 'con' command is executed.
+17:53:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:53:10 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+17:54:05 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+17:57:15 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+17:57:19 INFO  : Disconnected from the channel tcfchan#11.
+17:57:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:57:20 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+17:57:20 INFO  : 'jtag frequency' command is executed.
+17:57:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+17:57:20 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+17:57:20 INFO  : Context for processor 'microblaze_0' is selected.
+17:57:20 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+17:57:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:57:20 INFO  : Context for processor 'microblaze_0' is selected.
+17:57:20 INFO  : System reset is completed.
+17:57:23 INFO  : 'after 3000' command is executed.
+17:57:23 INFO  : Context for processor 'microblaze_0' is selected.
+17:57:23 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+17:57:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+17:57:24 INFO  : Context for processor 'microblaze_0' is selected.
+17:57:24 INFO  : 'con' command is executed.
+17:57:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:57:24 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+18:42:26 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+19:00:51 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+19:01:09 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+19:01:13 INFO  : Disconnected from the channel tcfchan#12.
+19:01:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:01:14 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+19:01:14 INFO  : 'jtag frequency' command is executed.
+19:01:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+19:01:15 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+19:01:15 INFO  : Context for processor 'microblaze_0' is selected.
+19:01:15 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+19:01:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:01:15 INFO  : Context for processor 'microblaze_0' is selected.
+19:01:15 INFO  : System reset is completed.
+19:01:18 INFO  : 'after 3000' command is executed.
+19:01:18 INFO  : Context for processor 'microblaze_0' is selected.
+19:01:18 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+19:01:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+19:01:18 INFO  : Context for processor 'microblaze_0' is selected.
+19:01:18 INFO  : 'con' command is executed.
+19:01:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:01:18 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+20:17:38 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+20:17:52 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+20:17:58 INFO  : Disconnected from the channel tcfchan#13.
+20:17:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:17:59 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+20:17:59 INFO  : 'jtag frequency' command is executed.
+20:17:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+20:18:00 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+20:18:00 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:00 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+20:18:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:18:00 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:00 INFO  : System reset is completed.
+20:18:03 INFO  : 'after 3000' command is executed.
+20:18:03 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:03 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+20:18:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+20:18:03 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:03 INFO  : 'con' command is executed.
+20:18:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:18:03 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+20:21:24 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+20:21:27 INFO  : Disconnected from the channel tcfchan#14.
+20:21:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:21:28 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+20:21:28 INFO  : 'jtag frequency' command is executed.
+20:21:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+20:21:29 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+20:21:29 INFO  : Context for processor 'microblaze_0' is selected.
+20:21:29 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+20:21:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:21:29 INFO  : Context for processor 'microblaze_0' is selected.
+20:21:29 INFO  : System reset is completed.
+20:21:32 INFO  : 'after 3000' command is executed.
+20:21:32 INFO  : Context for processor 'microblaze_0' is selected.
+20:21:32 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+20:21:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+20:21:32 INFO  : Context for processor 'microblaze_0' is selected.
+20:21:32 INFO  : 'con' command is executed.
+20:21:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:21:32 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+20:22:41 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+20:22:45 INFO  : Disconnected from the channel tcfchan#15.
+20:22:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:22:46 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+20:22:46 INFO  : 'jtag frequency' command is executed.
+20:22:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+20:22:47 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+20:22:47 INFO  : Context for processor 'microblaze_0' is selected.
+20:22:47 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+20:22:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:22:47 INFO  : Context for processor 'microblaze_0' is selected.
+20:22:47 INFO  : System reset is completed.
+20:22:50 INFO  : 'after 3000' command is executed.
+20:22:50 INFO  : Context for processor 'microblaze_0' is selected.
+20:22:50 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+20:22:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+20:22:50 INFO  : Context for processor 'microblaze_0' is selected.
+20:22:50 INFO  : 'con' command is executed.
+20:22:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:22:50 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+20:24:23 INFO  : Checking for BSP changes to sync application flags for project 'axi_i2c'...
+20:24:36 INFO  : Disconnected from the channel tcfchan#16.
+20:24:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:24:37 INFO  : Jtag cable 'Digilent Basys3 210183B31B5EA' is selected.
+20:24:37 INFO  : 'jtag frequency' command is executed.
+20:24:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}' command is executed.
+20:24:38 INFO  : Device configured successfully with "D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit"
+20:24:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:24:38 INFO  : Hardware design and registers information is loaded from 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa'.
+20:24:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:24:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:24:38 INFO  : System reset is completed.
+20:24:41 INFO  : 'after 3000' command is executed.
+20:24:41 INFO  : Context for processor 'microblaze_0' is selected.
+20:24:41 INFO  : The application 'D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf' is downloaded to processor 'microblaze_0'.
+20:24:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B31B5EA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B31B5EA-0362d093-0"}
+fpga -file D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/_ide/bitstream/axi_i2c_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c_wrapper/export/axi_i2c_wrapper/hw/axi_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/workspace/axi_i2c/Debug/axi_i2c.elf
+----------------End of Script----------------
+
+20:24:41 INFO  : Context for processor 'microblaze_0' is selected.
+20:24:41 INFO  : 'con' command is executed.
+20:24:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:24:41 INFO  : Launch script is exported to file 'D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\axi_i2c_system\_ide\scripts\debugger_axi_i2c-default.tcl'
+20:52:08 INFO  : Disconnected from the channel tcfchan#17.
+21:13:49 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\workspace\temp_xsdb_launch_script.tcl
+21:13:51 INFO  : XSCT server has started successfully.
+21:13:51 INFO  : Successfully done setting XSCT server connection channel  
+21:13:51 INFO  : plnx-install-location is set to ''
+21:13:51 INFO  : Successfully done setting workspace for the tool. 
+21:13:54 INFO  : Platform repository initialization has completed.
+21:13:54 INFO  : Successfully done query RDI_DATADIR 
+21:13:54 INFO  : Registering command handlers for Vitis TCF services

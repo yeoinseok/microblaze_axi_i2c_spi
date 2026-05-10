@@ -1,0 +1,71 @@
+15:56:13 **** Incremental Build of configuration Debug for project axi_spi ****
+make all 
+'Building file: ../src/driver/FND/FND.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/driver/FND/FND.o" -ID:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/sw/axi_spi_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/driver/FND/FND.d" -MT"src/driver/FND/FND.o" -o "src/driver/FND/FND.o" "../src/driver/FND/FND.c"
+'Finished building: ../src/driver/FND/FND.c'
+' '
+'Building file: ../src/driver/Button/Button.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/driver/Button/Button.o" -ID:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/sw/axi_spi_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/driver/Button/Button.d" -MT"src/driver/Button/Button.o" -o "src/driver/Button/Button.o" "../src/driver/Button/Button.c"
+'Finished building: ../src/driver/Button/Button.c'
+' '
+'Building file: ../src/common/common.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/common/common.o" -ID:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/sw/axi_spi_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/common/common.d" -MT"src/common/common.o" -o "src/common/common.o" "../src/common/common.c"
+'Finished building: ../src/common/common.c'
+' '
+'Building file: ../src/ap/upcounter/UpCounter.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ap/upcounter/UpCounter.o" -ID:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/sw/axi_spi_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ap/upcounter/UpCounter.d" -MT"src/ap/upcounter/UpCounter.o" -o "src/ap/upcounter/UpCounter.o" "../src/ap/upcounter/UpCounter.c"
+'Finished building: ../src/ap/upcounter/UpCounter.c'
+' '
+'Building file: ../src/ap/TimeClock/TimeClock.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ap/TimeClock/TimeClock.o" -ID:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/sw/axi_spi_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ap/TimeClock/TimeClock.d" -MT"src/ap/TimeClock/TimeClock.o" -o "src/ap/TimeClock/TimeClock.o" "../src/ap/TimeClock/TimeClock.c"
+'Finished building: ../src/ap/TimeClock/TimeClock.c'
+' '
+'Building file: ../src/ap/ap_main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ap/ap_main.o" -ID:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/sw/axi_spi_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ap/ap_main.d" -MT"src/ap/ap_main.o" -o "src/ap/ap_main.o" "../src/ap/ap_main.c"
+'Finished building: ../src/ap/ap_main.c'
+' '
+'Building file: ../src/ap/interrupt.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ap/interrupt.o" -ID:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/sw/axi_spi_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ap/interrupt.d" -MT"src/ap/interrupt.o" -o "src/ap/interrupt.o" "../src/ap/interrupt.c"
+'Finished building: ../src/ap/interrupt.c'
+' '
+'Building file: ../src/HAL/TMR/TMR.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/HAL/TMR/TMR.o" -ID:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/sw/axi_spi_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/HAL/TMR/TMR.d" -MT"src/HAL/TMR/TMR.o" -o "src/HAL/TMR/TMR.o" "../src/HAL/TMR/TMR.c"
+'Finished building: ../src/HAL/TMR/TMR.c'
+' '
+'Building file: ../src/HAL/SPI/SPI.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/HAL/SPI/SPI.o" -ID:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/sw/axi_spi_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/HAL/SPI/SPI.d" -MT"src/HAL/SPI/SPI.o" -o "src/HAL/SPI/SPI.o" "../src/HAL/SPI/SPI.c"
+'Finished building: ../src/HAL/SPI/SPI.c'
+' '
+'Building file: ../src/HAL/GPIO/GPIO.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/HAL/GPIO/GPIO.o" -ID:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/sw/axi_spi_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/HAL/GPIO/GPIO.d" -MT"src/HAL/GPIO/GPIO.o" -o "src/HAL/GPIO/GPIO.o" "../src/HAL/GPIO/GPIO.c"
+'Finished building: ../src/HAL/GPIO/GPIO.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/sw/axi_spi_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: axi_spi.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/sw/axi_spi_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "axi_spi.elf"  ./src/driver/FND/FND.o  ./src/driver/Button/Button.o  ./src/common/common.o  ./src/ap/upcounter/UpCounter.o  ./src/ap/TimeClock/TimeClock.o  ./src/ap/ap_main.o ./src/ap/interrupt.o  ./src/HAL/TMR/TMR.o  ./src/HAL/SPI/SPI.o  ./src/HAL/GPIO/GPIO.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_spi.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size axi_spi.elf  |tee "axi_spi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8648	    336	   3312	  12296	   3008	axi_spi.elf
+'Finished building: axi_spi.elf.size'
+' '
+
+15:56:16 Build Finished (took 2s.500ms)
+

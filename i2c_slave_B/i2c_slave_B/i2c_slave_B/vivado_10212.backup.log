@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 17 11:26:42 2026
+# Process ID: 10212
+# Current directory: D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13904 D:\pr0414_spi_i2c\new_I2C_project\i2c_slave_B\i2c_slave_B\i2c_slave_B.xpr
+# Log file: D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B/vivado.log
+# Journal file: D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B/i2c_slave_B.xpr
+INFO: [Project 1-313] Project file moved from 'C:/ondeviceAI/spi_i2c_project/i2c_slave_B/i2c_slave_B' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B/i2c_slave_B.gen/sources_1', nor could it be found using path 'C:/ondeviceAI/spi_i2c_project/i2c_slave_B/i2c_slave_B/i2c_slave_B.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 17 11:43:37 2026...

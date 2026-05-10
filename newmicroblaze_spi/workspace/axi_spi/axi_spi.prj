@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="axi_spi" location="D:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi" platform="D:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/workspace/axi_spi_wrapper/export/axi_spi_wrapper/axi_spi_wrapper.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="axi_spi_system" sysConfig="axi_spi_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="30afd1c57558137f4fe91e5cee9b7570">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1038104490">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.940737418" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

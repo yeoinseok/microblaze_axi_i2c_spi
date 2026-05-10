@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv,1778060505,systemVerilog,,,,tb_axi_i2c_simple,,uvm,,,,,,
+D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sources_1/imports/hdl/axi_i2c_v1_0.v,1777828836,verilog,,D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sources_1/imports/hdl/axi_i2c_v1_0_S00_AXI.v,,axi_i2c_v1_0;i2c_master,,uvm,,,,,,
+D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sources_1/imports/hdl/axi_i2c_v1_0_S00_AXI.v,1777872965,verilog,,,,axi_i2c_v1_0_S00_AXI,,uvm,,,,,,

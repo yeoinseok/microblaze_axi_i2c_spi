@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May  6 15:12:44 2026
+# Process ID: 1352
+# Current directory: D:/pr0503_microblaze_axi_spi_i2c/axi_i2c
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13980 D:\pr0503_microblaze_axi_spi_i2c\axi_i2c\axi_i2c.xpr
+# Log file: D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/vivado.log
+# Journal file: D:/pr0503_microblaze_axi_spi_i2c/axi_i2c\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.xpr
+import_files -norecurse {D:/pr0503_microblaze_axi_spi_i2c/ip_repo/axi_i2c_1.0/hdl/axi_i2c_v1_0_S00_AXI.v D:/pr0503_microblaze_axi_spi_i2c/ip_repo/axi_i2c_1.0/hdl/axi_i2c_v1_0.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv w ]
+add_files -fileset sim_1 D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_axi_i2c_simple [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_axi_i2c_simple.tcl
+run all
+relaunch_sim
+run all
+run 10 ms
+run 1 s
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+save_wave_config {D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/tb_axi_i2c_simple_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/tb_axi_i2c_simple_behav.wcfg
+set_property xsim.view D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/tb_axi_i2c_simple_behav.wcfg [get_filesets sim_1]
+close_sim

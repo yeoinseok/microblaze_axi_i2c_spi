@@ -1,0 +1,33 @@
+#include "SPI.h"
+
+void SPI_Init(SPI_Typedef_t *SPIx, uint8_t cpol, uint8_t cpha, uint8_t clk_div)
+{
+    uint32_t reg_val = 0;
+
+    // 비트 연산 후 마지막에 한 번에 씁니다.
+    if (cpol) reg_val |= (1 << SPI_CPOL_BIT);
+    if (cpha) reg_val |= (1 << SPI_CPHA_BIT);
+
+    SPIx->CR = reg_val;
+    SPIx->CLK_DIV = clk_div;
+}
+
+uint8_t SPI_Transfer(SPI_Typedef_t *SPIx, uint8_t tx_data)
+{
+    SPIx->TX_DATA = tx_data;
+
+    // 1. 통신 시작 신호 인가
+    SPIx->CR |= (1 << SPI_START_BIT);
+
+    // 2. 하드웨어가 Busy 상태가 될 때까지 기다리거나, 바로 Busy 체크
+    // RTL 설계상 Start 신호가 들어간 후 Busy가 바로 뜬다면 아래 루프만으로 충분함
+    volatile uint32_t timeout = 100000;
+    while ((SPIx->SR & (1 << SPI_BUSY_BIT)) && timeout > 0) {
+        timeout--;
+    }
+
+    // 3. 통신이 완료되면 Start 신호를 내림 (RTL 설계에 따라 선택)
+    SPIx->CR &= ~(1 << SPI_START_BIT);
+
+    return (uint8_t)(SPIx->SR & SPI_RX_MASK);
+}

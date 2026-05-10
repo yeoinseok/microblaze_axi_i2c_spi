@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May  6 10:20:11 2026
+# Process ID: 5328
+# Current directory: D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35468 D:\pr0503_microblaze_axi_spi_i2c\microblaze_i2c\microblaze_i2c.xpr
+# Log file: D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/vivado.log
+# Journal file: D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pr0503_microblaze_axi_spi_i2c/microblaze_i2c/microblaze_i2c.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/pr0503_microblaze_axi_spi_i2c/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1104.781 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  6 14:20:48 2026...

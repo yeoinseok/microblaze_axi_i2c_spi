@@ -1,0 +1,676 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May  6 15:12:44 2026
+# Process ID: 1352
+# Current directory: D:/pr0503_microblaze_axi_spi_i2c/axi_i2c
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13980 D:\pr0503_microblaze_axi_spi_i2c\axi_i2c\axi_i2c.xpr
+# Log file: D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/vivado.log
+# Journal file: D:/pr0503_microblaze_axi_spi_i2c/axi_i2c\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.xpr
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/pr0503_microblaze_axi_spi_i2c/ip_repo/aix_i2c_1.0'.
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/pr0503_microblaze_axi_spi_i2c/ip_repo/axi_i2c_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/pr0503_microblaze_axi_spi_i2c/ip_repo/aix_i2c_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1085.797 ; gain = 0.000
+import_files -norecurse {D:/pr0503_microblaze_axi_spi_i2c/ip_repo/axi_i2c_1.0/hdl/axi_i2c_v1_0_S00_AXI.v D:/pr0503_microblaze_axi_spi_i2c/ip_repo/axi_i2c_1.0/hdl/axi_i2c_v1_0.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv w ]
+add_files -fileset sim_1 D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv
+update_compile_order -fileset sim_1
+set_property top tb_axi_i2c_simple [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_axi_i2c_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_axi_i2c_simple_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sources_1/imports/hdl/axi_i2c_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_i2c_v1_0
+INFO: [VRFC 10-311] analyzing module i2c_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sources_1/imports/hdl/axi_i2c_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_i2c_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_i2c_simple
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xelab -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_i2c_v1_0_S00_AXI_default
+Compiling module xil_defaultlib.i2c_master
+Compiling module xil_defaultlib.axi_i2c_v1_0
+Compiling module xil_defaultlib.tb_axi_i2c_simple
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_axi_i2c_simple_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim/xsim.dir/tb_axi_i2c_simple_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May  6 15:16:38 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_axi_i2c_simple_behav -key {Behavioral:sim_1:Functional:tb_axi_i2c_simple} -tclbatch {tb_axi_i2c_simple.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_axi_i2c_simple.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+========================================
+AXI I2C Simple Testbench Started
+========================================
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_axi_i2c_simple_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1085.797 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1085.797 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_axi_i2c_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_axi_i2c_simple_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xelab -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+
+========================================
+AXI I2C Simple Testbench Started
+========================================
+
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1085.797 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 1085.797 ; gain = 0.000
+run 10 ms
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1085.797 ; gain = 0.000
+run 1 s
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_axi_i2c_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_axi_i2c_simple_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xelab -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+
+========================================
+AXI I2C Simple Testbench Started
+========================================
+
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1085.797 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_axi_i2c_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_axi_i2c_simple_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_i2c_simple
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xelab -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_i2c_v1_0_S00_AXI_default
+Compiling module xil_defaultlib.i2c_master
+Compiling module xil_defaultlib.axi_i2c_v1_0
+Compiling module xil_defaultlib.tb_axi_i2c_simple
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_axi_i2c_simple_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+
+========================================
+AXI I2C Simple Testbench Started
+========================================
+
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1085.797 ; gain = 0.000
+run all
+[1175000] AXI WRITE: ADDR=0x4, DATA=0x00000010
+[4385000] AXI WRITE: ADDR=0x8, DATA=0x0000abcd
+[7595000] AXI WRITE: ADDR=0x0, DATA=0x00002801
+[8815000] AXI READ:  ADDR=0xc, DATA=0x00000000
+Status: busy=0, done=0, rx_data=0x0000
+[20035000] AXI READ:  ADDR=0xc, DATA=0x00000000
+Status: busy=0, done=0, rx_data=0x0000
+
+========================================
+Simulation Complete!
+========================================
+
+$finish called at time : 21035 ns : File "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" Line 207
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_axi_i2c_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_axi_i2c_simple_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_i2c_simple
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xelab -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_i2c_v1_0_S00_AXI_default
+Compiling module xil_defaultlib.i2c_master
+Compiling module xil_defaultlib.axi_i2c_v1_0
+Compiling module xil_defaultlib.tb_axi_i2c_simple
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_axi_i2c_simple_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+
+========================================
+AXI I2C Simple Testbench Started
+========================================
+
+──────────────────────────────────────
+Test 1: Clock Divider 설정
+──────────────────────────────────────
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1085.797 ; gain = 0.000
+run all
+[1165000] ❌ AXI WRITE FAILED: ADDR=0x4 - BVALID Timeout!
+
+──────────────────────────────────────
+Test 2: TX Data 설정
+──────────────────────────────────────
+[2365000] ❌ AXI WRITE FAILED: ADDR=0x8 - AWREADY Timeout!
+
+──────────────────────────────────────
+Test 3: I2C Transaction Start
+──────────────────────────────────────
+[3565000] ❌ AXI WRITE FAILED: ADDR=0x0 - AWREADY Timeout!
+
+──────────────────────────────────────
+Test 4: Status 확인 (I2C 시작 직후)
+──────────────────────────────────────
+[4775000] ❌ AXI READ FAILED: ADDR=0xc - RVALID Timeout!
+       └─ BUSY=0, DONE=1, RX_DATA=0xbeef
+
+[대기 중... I2C 트랜잭션 완료 대기 (10us)]
+
+──────────────────────────────────────
+Test 5: Status 재확인 (I2C 완료 후)
+──────────────────────────────────────
+[15985000] ❌ AXI READ FAILED: ADDR=0xc - RVALID Timeout!
+       └─ BUSY=0, DONE=1, RX_DATA=0xbeef
+
+========================================
+         테스트 완료!
+========================================
+총 5개 AXI 트랜잭션 실행:
+  - Write: 3회 (CLK_DIV, TX_DATA, CTRL)
+  - Read:  2회 (STATUS)
+----------------------------------------
+시뮬레이션 종료 시간: 16985000
+========================================
+
+$finish called at time : 16985 ns : File "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" Line 270
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_axi_i2c_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_axi_i2c_simple_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_i2c_simple
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xelab -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_i2c_v1_0_S00_AXI_default
+Compiling module xil_defaultlib.i2c_master
+Compiling module xil_defaultlib.axi_i2c_v1_0
+Compiling module xil_defaultlib.tb_axi_i2c_simple
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_axi_i2c_simple_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+
+========================================
+AXI I2C Simple Testbench Started
+========================================
+
+[Test 1] Clock Divider Setup
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1085.797 ; gain = 0.000
+run all
+[1165000] [TIMEOUT] AXI WRITE: BVALID timeout
+
+[Test 2] TX Data Setup
+[2365000] [TIMEOUT] AXI WRITE: AWREADY timeout
+
+[Test 3] Start I2C Transaction
+[3565000] [TIMEOUT] AXI WRITE: AWREADY timeout
+
+[Test 4] Read Status (Right after start)
+[4775000] [TIMEOUT] AXI READ: RVALID timeout
+         BUSY=0, DONE=1, RX_DATA=0xbeef
+
+[Waiting] I2C transaction in progress...
+
+[Test 5] Read Status (After I2C done)
+[15985000] [TIMEOUT] AXI READ: RVALID timeout
+         BUSY=0, DONE=1, RX_DATA=0xbeef
+
+========================================
+Simulation Complete!
+========================================
+Total: 5 AXI transactions
+  - Write: 3 (CLK_DIV, TX_DATA, CTRL)
+  - Read:  2 (STATUS)
+End time: 16985000
+========================================
+
+$finish called at time : 16985 ns : File "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" Line 259
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_axi_i2c_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_axi_i2c_simple_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_i2c_simple
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xelab -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_i2c_v1_0_S00_AXI_default
+Compiling module xil_defaultlib.i2c_master
+Compiling module xil_defaultlib.axi_i2c_v1_0
+Compiling module xil_defaultlib.tb_axi_i2c_simple
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_axi_i2c_simple_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+
+========================================
+AXI I2C Simple Testbench Started
+========================================
+
+[Test 1] Clock Divider Setup
+[185000] [OK] AXI WRITE: ADDR=0x4, DATA=0x00000010
+
+[Test 2] TX Data Setup
+[415000] [OK] AXI WRITE: ADDR=0x8, DATA=0x0000abcd
+
+[Test 3] Start I2C Transaction
+[645000] [OK] AXI WRITE: ADDR=0x0, DATA=0x00002801
+
+[Test 4] Read Status (Right after start)
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1085.797 ; gain = 0.000
+run all
+[1855000] [TIMEOUT] AXI READ: RVALID timeout
+         BUSY=0, DONE=1, RX_DATA=0xbeef
+
+[Waiting] I2C transaction in progress...
+
+[Test 5] Read Status (After I2C done)
+[13065000] [TIMEOUT] AXI READ: RVALID timeout
+         BUSY=0, DONE=1, RX_DATA=0xbeef
+
+========================================
+Simulation Complete!
+========================================
+Total: 5 AXI transactions
+  - Write: 3 (CLK_DIV, TX_DATA, CTRL)
+  - Read:  2 (STATUS)
+End time: 14065000
+========================================
+
+$finish called at time : 14065 ns : File "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" Line 249
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_axi_i2c_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_axi_i2c_simple_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_i2c_simple
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xelab -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_i2c_v1_0_S00_AXI_default
+Compiling module xil_defaultlib.i2c_master
+Compiling module xil_defaultlib.axi_i2c_v1_0
+Compiling module xil_defaultlib.tb_axi_i2c_simple
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_axi_i2c_simple_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+
+========================================
+AXI I2C Simple Testbench Started
+========================================
+
+[Test 1] Clock Divider Setup
+[185000] [OK] AXI WRITE: ADDR=0x4, DATA=0x00000010
+
+[Test 2] TX Data Setup
+[415000] [OK] AXI WRITE: ADDR=0x8, DATA=0x0000abcd
+
+[Test 3] Start I2C Transaction
+[645000] [OK] AXI WRITE: ADDR=0x0, DATA=0x00002801
+
+[Test 4] Read Status (Right after start)
+[875000] [OK] AXI READ:  ADDR=0xc, DATA=0x00020000
+         BUSY=1, DONE=0, RX_DATA=0x0000
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1085.797 ; gain = 0.000
+run all
+
+[Waiting] I2C transaction in progress...
+
+[Test 5] Read Status (After I2C done)
+[11105000] [OK] AXI READ:  ADDR=0xc, DATA=0x00010000
+         BUSY=0, DONE=1, RX_DATA=0x0000
+
+========================================
+Simulation Complete!
+========================================
+Total: 5 AXI transactions
+  - Write: 3 (CLK_DIV, TX_DATA, CTRL)
+  - Read:  2 (STATUS)
+End time: 12105000
+========================================
+
+$finish called at time : 12105 ns : File "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" Line 252
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_axi_i2c_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_axi_i2c_simple_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_i2c_simple
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xelab -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_i2c_v1_0_S00_AXI_default
+Compiling module xil_defaultlib.i2c_master
+Compiling module xil_defaultlib.axi_i2c_v1_0
+Compiling module xil_defaultlib.tb_axi_i2c_simple
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_axi_i2c_simple_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+
+========================================
+AXI I2C Simple Testbench Started
+========================================
+
+[Test 1] Clock Divider Setup
+[195000] [OK] AXI WRITE: ADDR=0x4, DATA=0x00000010
+
+[Test 2] TX Data Setup
+[435000] [OK] AXI WRITE: ADDR=0x8, DATA=0x0000abcd
+
+[Test 3] Start I2C Transaction
+[675000] [OK] AXI WRITE: ADDR=0x0, DATA=0x00002801
+
+[Test 4] Read Status (Right after start)
+[915000] [OK] AXI READ:  ADDR=0xc, DATA=0x00020000
+         BUSY=1, DONE=0, RX_DATA=0x0000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1379.098 ; gain = 0.000
+run all
+
+[Waiting] I2C transaction in progress...
+
+[Test 5] Read Status (After I2C done)
+[11155000] [OK] AXI READ:  ADDR=0xc, DATA=0x00010000
+         BUSY=0, DONE=1, RX_DATA=0x0000
+
+========================================
+Simulation Complete!
+========================================
+Total: 5 AXI transactions
+  - Write: 3 (CLK_DIV, TX_DATA, CTRL)
+  - Read:  2 (STATUS)
+End time: 12155000
+========================================
+
+$finish called at time : 12155 ns : File "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" Line 256
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_axi_i2c_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_axi_i2c_simple_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_i2c_simple
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/axi_i2c.sim/sim_1/behav/xsim'
+"xelab -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8c79637a261f46df823f3c10c409939a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_axi_i2c_simple_behav xil_defaultlib.tb_axi_i2c_simple xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_i2c_v1_0_S00_AXI_default
+Compiling module xil_defaultlib.i2c_master
+Compiling module xil_defaultlib.axi_i2c_v1_0
+Compiling module xil_defaultlib.tb_axi_i2c_simple
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_axi_i2c_simple_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+
+========================================
+AXI I2C Simple Testbench Started
+========================================
+
+[Test 1] Clock Divider Setup
+[185000] [OK] AXI WRITE: ADDR=0x4, DATA=0x00000010
+
+[Test 2] TX Data Setup
+[415000] [OK] AXI WRITE: ADDR=0x8, DATA=0x0000abcd
+
+[Test 3] Start I2C Transaction
+[645000] [OK] AXI WRITE: ADDR=0x0, DATA=0x00002801
+
+[Test 4] Read Status (Right after start)
+[875000] [OK] AXI READ:  ADDR=0xc, DATA=0x00020000
+         BUSY=1, DONE=0, RX_DATA=0x0000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1379.098 ; gain = 0.000
+save_wave_config {D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/tb_axi_i2c_simple_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/tb_axi_i2c_simple_behav.wcfg
+set_property xsim.view D:/pr0503_microblaze_axi_spi_i2c/axi_i2c/tb_axi_i2c_simple_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 21:10:28 2026...

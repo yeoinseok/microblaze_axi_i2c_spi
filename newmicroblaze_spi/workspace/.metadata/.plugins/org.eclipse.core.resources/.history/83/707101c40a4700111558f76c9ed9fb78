@@ -1,0 +1,47 @@
+#include "driver/FND/FND.h"
+#include "HAL/TMR/TMR.h"
+#include "xintc.h"
+#include "xil_exception.h"
+#include "xparameters.h"
+
+volatile uint16_t cnt = 0;
+void MY_ISR(void *CallbackRef) { cnt++; }
+//void DUMMY_ISR(void *CallbackRef) { }
+
+int main() {
+    FND_Init();
+    FND_SetNum(1111);
+
+    TMR_StopIntr(TMR0);
+    TMR_StopIntr(TMR1);
+    TMR_StopIntr(TMR2);
+    TMR_StopTimer(TMR0);
+    TMR_StopTimer(TMR1);
+    TMR_StopTimer(TMR2);
+
+    XIntc intc;
+    XIntc_Initialize(&intc, XPAR_INTC_0_DEVICE_ID);
+    //XIntc_Connect(&intc, 0, (XInterruptHandler)DUMMY_ISR, (void *)0);
+    XIntc_Connect(&intc, 1, (XInterruptHandler)MY_ISR, (void *)0);
+   // XIntc_Connect(&intc, 2, (XInterruptHandler)DUMMY_ISR, (void *)0);
+
+    // self-test 건너뛰고 직접 활성화
+    *((volatile uint32_t *)(XPAR_INTC_0_BASEADDR + 0x1C)) = 0x3;
+
+    XIntc_Enable(&intc, 1);
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+        (XInterruptHandler)XIntc_InterruptHandler, &intc);
+    Xil_ExceptionEnable();
+
+    TMR_SetPSC(TMR1, 100 - 1);
+    TMR_SetARR(TMR1, 1000 - 1);
+    TMR_StartIntr(TMR1);
+    TMR_StartTimer(TMR1);
+
+    while(1) {
+        FND_SetNum(cnt);
+        FND_DispDigit();
+        for(volatile int i=0; i<10000; i++);
+    }
+}

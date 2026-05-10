@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B.srcs/sim_1/new/tb_i2c_slave.sv,1776331506,systemVerilog,,,,tb_i2c_slave,,uvm,,,,,,
+D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B.srcs/sources_1/new/i2c_slave.sv,1776330957,systemVerilog,,D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B.srcs/sources_1/new/i2c_slave_top.sv,,i2c_slave,,uvm,,,,,,
+D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B.srcs/sources_1/new/i2c_slave_top.sv,1776330999,systemVerilog,,D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B.srcs/sim_1/new/tb_i2c_slave.sv,,i2c_slave_top,,uvm,,,,,,

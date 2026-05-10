@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May  6 09:34:21 2026
+# Process ID: 37596
+# Current directory: D:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33364 D:\pr0503_microblaze_axi_spi_i2c\newmicroblaze_spi\newmicroblaze_spi.xpr
+# Log file: D:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/vivado.log
+# Journal file: D:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pr0503_microblaze_axi_spi_i2c/newmicroblaze_spi/newmicroblaze_spi.xpr
+update_compile_order -fileset sources_1

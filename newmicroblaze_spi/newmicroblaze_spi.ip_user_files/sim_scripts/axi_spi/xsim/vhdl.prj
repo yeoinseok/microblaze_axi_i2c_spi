@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../bd/axi_spi/ip/axi_spi_microblaze_0_0/sim/axi_spi_microblaze_0_0.vhd" \
+"../../../bd/axi_spi/ip/axi_spi_dlmb_v10_0/sim/axi_spi_dlmb_v10_0.vhd" \
+"../../../bd/axi_spi/ip/axi_spi_ilmb_v10_0/sim/axi_spi_ilmb_v10_0.vhd" \
+"../../../bd/axi_spi/ip/axi_spi_dlmb_bram_if_cntlr_0/sim/axi_spi_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/axi_spi/ip/axi_spi_ilmb_bram_if_cntlr_0/sim/axi_spi_ilmb_bram_if_cntlr_0.vhd" \
+"../../../bd/axi_spi/ip/axi_spi_microblaze_0_axi_intc_0/sim/axi_spi_microblaze_0_axi_intc_0.vhd" \
+"../../../bd/axi_spi/ip/axi_spi_mdm_1_0/sim/axi_spi_mdm_1_0.vhd" \
+"../../../bd/axi_spi/ip/axi_spi_rst_clk_wiz_1_100M_0/sim/axi_spi_rst_clk_wiz_1_100M_0.vhd" \
+
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 17 14:14:36 2026
+# Process ID: 4572
+# Current directory: D:/pr0414_spi_i2c/new_SPI_project/spi_master_A/spi_master_A.runs/synth_1
+# Command line: vivado.exe -log top_master.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_master.tcl
+# Log file: D:/pr0414_spi_i2c/new_SPI_project/spi_master_A/spi_master_A.runs/synth_1/top_master.vds
+# Journal file: D:/pr0414_spi_i2c/new_SPI_project/spi_master_A/spi_master_A.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_master.tcl -notrace

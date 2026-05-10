@@ -1,0 +1,9 @@
+timestamp=[2026-05-04 00:53:05], mode=WORKBENCH_START, duration=0:00:04.991, duration_ms=4991, data={}
+timestamp=[2026-05-04 00:53:05], mode=WORKBENCH_UI_INIT, duration=0:00:00.287, duration_ms=287, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2026-05-04 00:53:08], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.192, duration_ms=2192, data={}
+timestamp=[2026-05-04 00:54:11], mode=APP_CREATION, duration=0:00:04.481, duration_ms=4481, data={name=axi_spi, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=axi_spi_wrapper, application_type=application}
+timestamp=[2026-05-04 14:13:45], mode=PLATFORM_GENERATION, duration=0:00:08.881, duration_ms=8881, data={name=axi_spi_wrapper}
+timestamp=[2026-05-04 14:13:49], mode=BUILD, duration=0:00:03.327, duration_ms=3327, data={name=axi_spi, configuration=Debug, clean_build=false}
+timestamp=[2026-05-04 14:26:52], mode=BUILD, duration=0:00:00.617, duration_ms=617, data={name=axi_spi, configuration=Debug, clean_build=false}
+timestamp=[2026-05-04 15:56:13], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=axi_spi, configuration=Debug, clean_build=true}
+timestamp=[2026-05-04 15:56:16], mode=BUILD, duration=0:00:02.510, duration_ms=2510, data={name=axi_spi, configuration=Debug, clean_build=false}

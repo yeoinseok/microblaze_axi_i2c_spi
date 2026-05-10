@@ -1,0 +1,42 @@
+#include "ap_main.h"
+#include "xil_printf.h"
+#include "../driver/FND/FND.h"
+#include "../common/common.h"
+#include "../driver/Button/Button.h"
+#include "../HAL/SPI/SPI.h"
+#include "UpCounter/UpCounter.h"
+#include "../HAL/TMR/TMR.h"
+#include "interrupt.h"
+
+extern volatile uint8_t spi_tx_flag;
+extern volatile uint8_t spi_rx_data;
+extern uint16_t counter;
+
+void ap_init() {
+    TMR_SetPSC(TMR0, 100 - 1);
+    TMR_SetARR(TMR0, 0xffffffff);
+    TMR_StartTimer(TMR0);
+
+    UpCounter_Init();
+    TimeClock_Init();
+    FND_Init();
+
+    FND_SetNum(0); // 런치 직후 "0000"을 띄우기 위해 명시적으로 추가!
+
+    SetupInterruptSystem();
+
+    TMR_SetPSC(TMR1, 100 - 1);
+    TMR_SetARR(TMR1, 1000 - 1);
+    TMR_StartIntr(TMR1);
+    TMR_StartTimer(TMR1);
+
+    FND_DispAllOn(); // 모든 세그먼트와 공통 단자를 0(ON)으로 만듦
+        while(1);
+}
+
+void ap_excute() {
+    while (1) {
+        UpCounter_Excute();
+        // TimeClock_Excute(); // 필요 시 추가
+    }
+}

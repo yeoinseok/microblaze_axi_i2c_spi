@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 17 11:26:42 2026
+# Process ID: 10212
+# Current directory: D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13904 D:\pr0414_spi_i2c\new_I2C_project\i2c_slave_B\i2c_slave_B\i2c_slave_B.xpr
+# Log file: D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B/vivado.log
+# Journal file: D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pr0414_spi_i2c/new_I2C_project/i2c_slave_B/i2c_slave_B/i2c_slave_B.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1

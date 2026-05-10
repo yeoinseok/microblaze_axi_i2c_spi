@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../axi_i2c.srcs/sources_1/imports/hdl/axi_i2c_v1_0.v" \
+"../../../../axi_i2c.srcs/sources_1/imports/hdl/axi_i2c_v1_0_S00_AXI.v" \
+
+sv xil_defaultlib  \
+"../../../../axi_i2c.srcs/sim_1/new/tb_axi_i2c_simple.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

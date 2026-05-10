@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May  7 21:39:07 2026
+# Process ID: 40728
+# Current directory: D:/pr0503_microblaze_axi_spi_i2c/i2c_slave_B/i2c_slave_B/i2c_slave_B
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32576 D:\pr0503_microblaze_axi_spi_i2c\i2c_slave_B\i2c_slave_B\i2c_slave_B\i2c_slave_B.xpr
+# Log file: D:/pr0503_microblaze_axi_spi_i2c/i2c_slave_B/i2c_slave_B/i2c_slave_B/vivado.log
+# Journal file: D:/pr0503_microblaze_axi_spi_i2c/i2c_slave_B/i2c_slave_B/i2c_slave_B\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pr0503_microblaze_axi_spi_i2c/i2c_slave_B/i2c_slave_B/i2c_slave_B/i2c_slave_B.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+show_objects -name find_1 [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ RTL_REGISTER.flop.* } ]
+refresh_design
+show_objects -name find_1 [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ RTL_REGISTER.latch.* } ]
+refresh_design

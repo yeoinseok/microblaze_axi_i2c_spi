@@ -1,0 +1,27 @@
+#ifndef SRC_HAL_I2C_SPI_H_
+#define SRC_HAL_I2C_SPI_H_
+#include "xparameters.h"
+#include <stdint.h>
+
+typedef struct {
+    uint32_t CR;
+    uint32_t CLK_DIV;
+    uint32_t TX_DATA;
+    uint32_t SR;
+} SPI_Typedef_t;
+
+#define SPI0_BASEADDR   XPAR_AXI_SPI_0_S00_AXI_BASEADDR
+#define SPI0            ((SPI_Typedef_t *)(SPI0_BASEADDR))
+
+#define SPI_START_BIT   0
+#define SPI_CPOL_BIT    4
+#define SPI_CPHA_BIT    5
+
+#define SPI_DONE_BIT    16   // 기존 8 -> 16
+#define SPI_BUSY_BIT    17   // 기존 9 -> 17
+#define SPI_RX_MASK     0xFFFF  // 기존 0xFF -> 0xFFFF
+
+void SPI_Init(SPI_Typedef_t *SPIx, uint8_t cpol, uint8_t cpha, uint8_t clk_div);
+uint16_t SPI_Transfer(SPI_Typedef_t *SPIx, uint16_t tx_data);
+
+#endif

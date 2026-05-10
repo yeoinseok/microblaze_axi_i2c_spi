@@ -1,0 +1,19 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+
+========================================
+AXI I2C Simple Testbench Started
+========================================
+
+[Test 1] Clock Divider Setup
+[185000] [OK] AXI WRITE: ADDR=0x4, DATA=0x00000010
+
+[Test 2] TX Data Setup
+[415000] [OK] AXI WRITE: ADDR=0x8, DATA=0x0000abcd
+
+[Test 3] Start I2C Transaction
+[645000] [OK] AXI WRITE: ADDR=0x0, DATA=0x00002801
+
+[Test 4] Read Status (Right after start)
+[875000] [OK] AXI READ:  ADDR=0xc, DATA=0x00020000
+         BUSY=1, DONE=0, RX_DATA=0x0000
