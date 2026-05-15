@@ -64,12 +64,26 @@ microblaze_axi_i2c_spi/
 ## 🏗 시스템 아키텍처
 
 ### 하드웨어 블록 다이어그램
+### 1️⃣ AXI-SPI 상세 구조
 
-<img width="1194" height="427" alt="image" src="https://github.com/user-attachments/assets/42a2724e-cd17-4594-8fe8-7f24e12baae1" />
+<img width="1194" height="427" alt="image" src="https://github.com/user-attachments/assets/d3b17d64-e84d-4ad3-921f-cbad221dab79" />
 
 
+---
+
+### 2️⃣ AXI-I2C 상세 구조
+
+<img width="788" height="453" alt="image" src="https://github.com/user-attachments/assets/a6f97771-7544-43f6-be7e-8cbd67ee720b" />
 
 
+---
+
+### 3️⃣ 소프트웨어 레이어드 아키텍처
+(SPI)
+<img width="684" height="369" alt="image" src="https://github.com/user-attachments/assets/268dcea5-2023-4ccb-bfa4-da756de5fb89" />
+
+(I2C)
+<img width="974" height="531" alt="image" src="https://github.com/user-attachments/assets/654e2c3f-b04e-4904-b74a-4e7e0fcedfd5" />
 
 ### 레지스터 맵
 
