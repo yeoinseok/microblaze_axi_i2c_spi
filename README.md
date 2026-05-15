@@ -80,9 +80,11 @@ microblaze_axi_i2c_spi/
 
 ### 3️⃣ 소프트웨어 레이어드 아키텍처
 (SPI)
+
 <img width="684" height="369" alt="image" src="https://github.com/user-attachments/assets/268dcea5-2023-4ccb-bfa4-da756de5fb89" />
 
 (I2C)
+
 <img width="974" height="531" alt="image" src="https://github.com/user-attachments/assets/654e2c3f-b04e-4904-b74a-4e7e0fcedfd5" />
 
 ### 레지스터 맵
