@@ -64,10 +64,12 @@ microblaze_axi_i2c_spi/
 ## 🏗 시스템 아키텍처
 
 ### 하드웨어 블록 다이어그램
-```
-<img width="1020" height="364" alt="image" src="https://github.com/user-attachments/assets/256693e1-4fae-40d0-8686-d2c910149692" />
 
-```
+<img width="1194" height="427" alt="image" src="https://github.com/user-attachments/assets/42a2724e-cd17-4594-8fe8-7f24e12baae1" />
+
+
+
+
 
 ### 레지스터 맵
 
