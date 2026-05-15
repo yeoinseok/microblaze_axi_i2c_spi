@@ -79,14 +79,28 @@ microblaze_axi_i2c_spi/
 ---
 
 ### 3️⃣ 소프트웨어 레이어드 아키텍처
-(SPI)
 
+#### SPI 시스템
 <img width="684" height="369" alt="image" src="https://github.com/user-attachments/assets/268dcea5-2023-4ccb-bfa4-da756de5fb89" />
 
-(I2C)
+**4계층 구조:**
+- **Application Layer**: 메인 애플리케이션 로직
+- **Driver Layer**: FND, Button, Switch 제어 및 SPI 전송 함수
+- **HAL Layer**: GPIO/SPI 하드웨어 추상화 계층
+- **Hardware Layer**: AXI GPIO, AXI SPI IP 페리페럴
+
+---
+
+#### I2C 시스템
 
 <img width="974" height="531" alt="image" src="https://github.com/user-attachments/assets/654e2c3f-b04e-4904-b74a-4e7e0fcedfd5" />
 
+**4계층 구조:**
+- **Application Layer**: UpCounter 메인 태스크, 타이머 인터럽트 핸들러
+- **Driver Layer**: I2C Read/Write, Button/FND 드라이버
+- **HAL Layer**: I2C.c, GPIO.c, TMR.c (레지스터 제어)
+- **Hardware Layer**: AXI I2C, AXI GPIO, AXI TMR 페리페럴
+- 
 ### 레지스터 맵
 
 #### AXI-SPI 레지스터
