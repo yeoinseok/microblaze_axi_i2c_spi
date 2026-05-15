@@ -100,7 +100,8 @@ microblaze_axi_i2c_spi/
 - **Driver Layer**: I2C Read/Write, Button/FND 드라이버
 - **HAL Layer**: I2C.c, GPIO.c, TMR.c (레지스터 제어)
 - **Hardware Layer**: AXI I2C, AXI GPIO, AXI TMR 페리페럴
-- 
+
+  
 ### 레지스터 맵
 
 #### AXI-SPI 레지스터
