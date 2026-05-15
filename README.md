@@ -256,7 +256,7 @@ end
 
 ## 🔗 관련 레포지토리
 
-- **UVM 검증**: [i2c_UVM].(https://github.com/yeoinseok/microblaze_axi_spi_uvm)
+- **UVM 검증**: [i2c_UVM](https://github.com/yeoinseok/microblaze_axi_spi_uvm)
 
 ## 📄 참고 자료
 
